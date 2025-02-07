@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // For navigation
-import '../assets/Login.css';// Make sure the CSS file is properly linked
+import { Link } from 'react-router-dom';
+import '../assets/Login.css';
 
 
 const Register = () => {
-  // State hooks for form fields
+  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  // Form submission handler
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add your form submission logic here
+    
     console.log('Form submitted:', { email, password, confirmPassword });
   };
 
@@ -29,7 +29,7 @@ const Register = () => {
             className="input"
             style={{ marginBottom: '10px' }}
             value={email}
-            onChange={(e) => setEmail(e.target.value)} // Handle input changes
+            onChange={(e) => setEmail(e.target.value)} 
           /><br />
           <label htmlFor="pwd">Password</label><br />
           <input
@@ -39,7 +39,7 @@ const Register = () => {
             className="input"
             style={{ marginBottom: '10px' }}
             value={password}
-            onChange={(e) => setPassword(e.target.value)} // Handle input changes
+            onChange={(e) => setPassword(e.target.value)} 
           /><br />
           <label htmlFor="confirm-pwd">Confirm Password</label><br />
           <input
@@ -48,7 +48,7 @@ const Register = () => {
             name="confirm-pwd"
             className="input"
             value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)} // Handle input changes
+            onChange={(e) => setConfirmPassword(e.target.value)} 
           /><br />
           <button className="btn" type="submit"><a href="/">Submit</a></button>
         </form>
