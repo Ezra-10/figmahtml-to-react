@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // For navigation
-import '../assets/Login.css';// Make sure the CSS file is properly linked
+import { Link } from 'react-router-dom';
+import '../assets/Login.css';
 
 const Register = () => {
   // State hooks for form fields
@@ -28,7 +28,7 @@ const Register = () => {
             className="input"
             style={{ marginBottom: '10px' }}
             value={email}
-            onChange={(e) => setEmail(e.target.value)} // Handle input changes
+            onChange={(e) => setEmail(e.target.value)}
           /><br />
           <label htmlFor="pwd">Password</label><br />
           <input
@@ -38,11 +38,11 @@ const Register = () => {
             className="input"
             style={{ marginBottom: '10px' }}
             value={password}
-            onChange={(e) => setPassword(e.target.value)} // Handle input changes
+            onChange={(e) => setPassword(e.target.value)}
           /><br />
           
           <br />
-          <Link to="/Home">submit</Link>
+          <button className="btn" type="submit"><Link to="/Home">submit</Link></button>
         </form>
         <p style={{ textAlign: 'center' }}>
           Dont have an account? <Link to="/register">Come Here</Link>
