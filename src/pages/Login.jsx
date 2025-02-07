@@ -42,7 +42,7 @@ const Register = () => {
           /><br />
           
           <br />
-          <button className="btn" type="submit"><a href="/home">Submit</a></button>
+          <Link to="/Home">submit</Link>
         </form>
         <p style={{ textAlign: 'center' }}>
           Dont have an account? <Link to="/register">Come Here</Link>
