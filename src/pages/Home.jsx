@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/Home.css'; // Make sure to link the CSS file
+import '../assets/Home.css';
 import q from "../assets/1.png" 
 import w from "../assets/2.png" 
 import e from "../assets/4.png" 
