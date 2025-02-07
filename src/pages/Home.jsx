@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/Home.css'; // Make sure to link the CSS file
 import q from "../assets/1.png" 
 import w from "../assets/2.png" 
